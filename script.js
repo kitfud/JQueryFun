@@ -27,6 +27,20 @@ $('#D').mouseleave(function(){
     width: '-=150px'})
 });
 
+$("#add").click(function(){
+  $("#E").append($("<div>",
+    {
+    class:"green square",
+    id:"random"
+    }
+    ))
+})
+
+$("#remove").click(function(){
+  $("#random").remove()
+})
+
+
 let s = $("#E").children().text()
 console.log(s)
 
